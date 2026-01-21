@@ -1,0 +1,4 @@
+name: zen21v2-personal
+packageKey: zen21v2-personal
+permissions:
+  zwave: {}

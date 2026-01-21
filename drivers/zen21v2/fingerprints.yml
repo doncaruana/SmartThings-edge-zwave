@@ -1,0 +1,7 @@
+zwaveManufacturer:
+  - id: "015D/0111/1E1C"
+    deviceLabel: "Zooz ZEN21 v2 (015D-0111-1E1C)"
+    manufacturerId: 0x015D
+    productType: 0x0111
+    productId: 0x1E1C
+    deviceProfileName: zen21v2-switch
