@@ -1,0 +1,47 @@
+name: zen21v2-switch
+components:
+  - id: main
+    capabilities:
+      - id: switch
+        version: 1
+      - id: refresh
+        version: 1
+      - id: firmwareUpdate
+        version: 1
+    categories:
+      - name: Switch
+preferences:
+  - title: "Switch Orientation"
+    name: switchOrientation
+    description: "Choose if the upper paddle turns the light on or off"
+    required: true
+    preferenceType: enumeration
+    definition:
+      options:
+        "0": "Up for on, down for off"
+        "1": "Up for off, down for on"
+      default: "0"
+  - title: "LED Follow"
+    name: ledFollow
+    description: "Choose if the LED is opposite the switch or follows the switch"
+    required: true
+    preferenceType: enumeration
+    definition:
+      options:
+        "0": "LED opposite switch"
+        "1": "LED follows switch"
+      default: "0"
+  - title: "LED Disabled"
+    name: ledDisabled
+    description: "Disable the LED completely"
+    required: true
+    preferenceType: boolean
+    definition:
+      default: false
+  - title: "Soft Toggle"
+    name: softToggle
+    description: "When On, either paddle toggles the load"
+    required: true
+    preferenceType: boolean
+    definition:
+      default: false
